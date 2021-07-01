@@ -29,5 +29,14 @@ func main(){
 	go genNumberByChannelArgument(chanB)
 
 	fmt.Println("SUM: " , calSum(<-chanA, <-chanB))
+
+
+	/*chanNumber := make(chan int, 2)
+
+	go genNumberByChannelArgument(chanNumber)
+	go genNumberByChannelArgument(chanNumber)
+
+	fmt.Println("SUM: " , calSum(<-chanNumber, <-chanNumber))*/
+
 	log.Println("END")
 }
