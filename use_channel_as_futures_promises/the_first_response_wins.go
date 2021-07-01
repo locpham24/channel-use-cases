@@ -15,6 +15,7 @@ func source(c chan<- int) {
 	c <- number
 }
 
+// the technique also answer the question: how to get result from goroutines
 func main(){
 	rand.Seed(time.Now().UnixNano())
 
